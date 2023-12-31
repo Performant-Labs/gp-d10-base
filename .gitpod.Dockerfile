@@ -6,7 +6,7 @@ RUN sudo apt-get -qq update
 # Homebrew is already installed in workspace-full.
 
 # Install Lando
-RUN brew update && brew install --cask lando
+RUN brew update && brew install lando
 
 # Install latest composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
