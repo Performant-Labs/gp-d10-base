@@ -9,7 +9,7 @@ tasks:
       lando composer require drush/drush
       lando composer install -n
       chmod ug+w -R /workspace/gitpod/sites/default/
-      lando drush si -y --account-pass=admin --site-name='lando_drupal10' --db-url=mysql://drupal:drupal@database/drupal drupal_starter
+      lando drush si -y --account-pass=admin --site-name='lando_drupal10' --db-url=mysql://drupal10:drupal10@database/drupal10
       gp preview $(gp url $(lando info --format=json | jq -r ".[0].urls[1]" | sed -e 's#http://localhost:\(\)#\1#'))
 
 ports:
