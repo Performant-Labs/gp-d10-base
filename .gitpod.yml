@@ -1,23 +1,2 @@
 image:
   file: .gitpod.Dockerfile
-
-# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 8000
-    onOpen: open-preview
-
-vscode:
-  extensions:
-    - MS-vsliveshare.vsliveshare
-    - GitHub.vscode-pull-request-github
-    - GitHub.copilot
-    - editorconfig.editorconfig
-    - xdebug.php-debug
-    - valeryanm.vscode-phpsab
-    - mblode.twig-language-2
-    - bmewburn.vscode-intelephense-client
-
-# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
-#tasks:
-#  - init: ./setup.sh
-#    command: cd drupal && XDEBUG_MODE=debug vendor/bin/drush rs 0.0.0.0:8000
