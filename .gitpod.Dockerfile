@@ -3,8 +3,7 @@ USER gitpod
 
 RUN sudo apt-get -qq update
 
-# Install Homebrew
-run /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Homebrew is already installed in workspace-full.
 
 # Install Lando
 RUN brew update && brew install --cask lando
